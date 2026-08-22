@@ -39,3 +39,6 @@ jobs:
         with:
           target: "http://localhost:5000"
           allow_issue_writing: false
+
+      - name: Run secret scan
+        uses: gitleaks/gitleaks-action@v2
