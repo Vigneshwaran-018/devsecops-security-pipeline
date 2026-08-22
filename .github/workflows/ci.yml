@@ -25,3 +25,6 @@ jobs:
 
       - name: Run SAST scan
         run: bandit -r app/
+
+      - name: Run SCA scan
+        run: pip-audit -r requirements.txt
